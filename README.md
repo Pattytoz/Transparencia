@@ -20,6 +20,42 @@ Análisis integral y auditoría de calidad sobre un conjunto de más de 260,000 
 Power BI, Power Query (ETL / Data Wrangling), DAX.
 
 
+**EJEMPLOS DE MEDIDAS DAX UTILIZADAS**
+
+% Cumplimiento a Tiempo = 
+VAR SolicitudesATiempo = 
+    CALCULATE(
+        [Total Folios],
+        'Sheet1'[FECHARESPUESTA] <= 'Sheet1'[FECHALIMITE]
+    )
+RETURN
+    DIVIDE(SolicitudesATiempo, [Total Folios], 0)
+
+----------------------------------------------------------------------
+
+% Plazos Irregulares / Alterados = 
+VAR TotalSolicitudes = COUNTROWS('Transparencia')
+VAR SolicitudesAlteradas = 
+    CALCULATE(
+        COUNTROWS('Transparencia'), 
+        'Transparencia'[Alerta Fecha Límite] = "3. Plazo Irregular / Alterado (>30 días)"
+    )
+RETURN
+    DIVIDE(SolicitudesAlteradas, TotalSolicitudes, 0)    
+
+--------------------------------------------------------------------
+
+Alerta Fecha Límite = 
+    VAR DiasHabilesPlazo = NETWORKDAYS('Transparencia'[FECHASOLICITUD], 'Transparencia'[FECHALIMITE]) - 1
+RETURN
+    SWITCH(
+        TRUE(),
+        ISBLANK('Transparencia'[FECHALIMITE]), "Sin Fecha Límite",
+        DiasHabilesPlazo <= 20, "1. Plazo Ordinario (<=20 días)",
+        DiasHabilesPlazo <= 30, "2. Plazo con Prórroga (21-30 días)",
+        "3. Plazo Irregular / Alterado (>30 días)"
+    )
+
 **OPTIMIZACIÓN DE RENDIMIENTO Y ARQUITECTURA ETL**
 
 * Estrategia de Carga: Para optimizar el uso de memoria RAM y acelerar el tiempo de respuesta del motor ante más de 260,000 registros, se realizó la combinación de consultas (Merge) directamente en Power Query.
