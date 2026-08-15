@@ -11,13 +11,31 @@ Análisis integral y auditoría de calidad sobre un conjunto de más de 260,000 
 **PUNTOS CLAVE**
 
 * ETL & Data Wrangling: Depuración y estandarización de más de 500 variantes de nombres de dependencias públicas mediante Power Query.
+  
+  ![Vista del Dashboard](assets/1.jpg)
+  
 * Modelado DAX: Creación de métricas para auditar plazos límite y detectar discrepancias entre el cumplimiento oficial y el cumplimiento real.
+  
+  ![Vista del Dashboard](assets/DAX.jpg)
+  
 * Data Storytelling & BI: Diseño de tableros interactivos e intuitivos en Power BI para el análisis de tendencias, volumen por materia y comportamiento por dependencia (IFAI/INAI, PJF, PEMEX).
+  
+  ![Vista del Dashboard](assets/PEMEX.png)
+  
+  ![Vista del Dashboard](assets/IFAI.jpg)
+  
+  ![Vista del Dashboard](assets/PJF.jpg)
+  
 * Gobernanza de Datos: Formulación de propuestas técnicas orientadas a la estandarización de captura desde el origen y la automatización de plazos por sistema.
+  
+![Vista del Dashboard](assets/PROPUESTAS.png)
 
 
 **STACK TECNOLÓGICO** 
-Power BI, Power Query (ETL / Data Wrangling), DAX.
+Power BI, Power Query (ETL / Data Wrangling), DAX, Python
+
+![Vista del Dashboard](assets/Python.png)
+
 
 
 **EJEMPLOS DE MEDIDAS DAX UTILIZADAS**
@@ -55,6 +73,7 @@ RETURN
         DiasHabilesPlazo <= 30, "2. Plazo con Prórroga (21-30 días)",
         "3. Plazo Irregular / Alterado (>30 días)"
     )
+
 
 **OPTIMIZACIÓN DE RENDIMIENTO Y ARQUITECTURA ETL**
 
