@@ -7,7 +7,8 @@
 
 Análisis integral y auditoría de calidad sobre un conjunto de más de 260,000 registros históricos de solicitudes de información pública. El objetivo principal del proyecto consistió en evaluar la integridad de los datos, medir los tiempos reales de respuesta institucional y diseñar propuestas de arquitectura de software para optimizar la gobernanza del sistema.
 
-Puntos clave del proyecto:
+
+**Puntos clave del proyecto:**
 
 ETL & Data Wrangling: Depuración y estandarización de más de 500 variantes de nombres de dependencias públicas mediante Power Query.
 
@@ -17,7 +18,16 @@ Data Storytelling & BI: Diseño de tableros interactivos e intuitivos en Power B
 
 Gobernanza de Datos: Formulación de propuestas técnicas orientadas a la estandarización de captura desde el origen y la automatización de plazos por sistema.
 
-**Stack Tecnológico**: Power BI, Power Query (ETL / Data Wrangling), DAX, Modelado Relacional.
+
+**Stack Tecnológico**: Power BI, Power Query (ETL / Data Wrangling), DAX.
+
+
+**Optimización de Rendimiento y Arquitectura ETL**:
+
+Estrategia de Carga: Para optimizar el uso de memoria RAM y acelerar el tiempo de respuesta del motor ante más de 260,000 registros, se realizó la combinación de consultas (Merge) directamente en Power Query.
+
+Diseño del Modelo: Se optó por una arquitectura desnormalizada en una tabla maestra (Transparencia), desactivando la detección automática de relaciones para reducir el impacto en memoria y eliminar la sobrecarga de consultas cruzadas en DAX.
+
 
 **Principales Hallazgos (Insights):**
 
@@ -27,8 +37,10 @@ Identificación del % de cumplimiento REAL vs. Oficial
 
 Detección y análisis de 6,531 solicitudes atípicas.
 
-Propuestas de Solución Técnica:  3 tarjetas finales (Estandarización en Origen, Blindaje por Sistema y Transparencia Proactiva).
 
-**Autoría y Contacto**: Patricia E. Torres G. / Ingeniera en Software Administradora de Empresas & Data Analyst.
+**Propuestas de Solución Técnica: ** 3 tarjetas finales (Estandarización en Origen, Blindaje por Sistema y Transparencia Proactiva).
+
+
+**Autoría y Contacto**: Patricia E. Torres G. / Ingeniera en Software / Administradora de Empresas / Data Analyst.
 https://www.linkedin.com/in/patricia-e-torres
 Correo electrónico otropattytoz@gmail.com
