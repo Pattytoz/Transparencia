@@ -30,7 +30,6 @@ VAR SolicitudesATiempo =
     )
 RETURN
     DIVIDE(SolicitudesATiempo, [Total Folios], 0)
-
 ----------------------------------------------------------------------
 
 % Plazos Irregulares / Alterados = 
