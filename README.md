@@ -1,2 +1,33 @@
-# Transparencia
-Proyecto de Auditoría de Datos y Business Intelligence en +260 mil registros de Transparencia Pública (2003–2025) Análisis, auditoría e ingeniería de datos. ETL &amp; Data Wrangling mediante depuración en Power Query, métricas DAX, Data Storytelling en dashboards interactivos en Power BI y formulación de propuestas de arquitectura y gobernanza de datos
+**Título del Proyecto**: Auditoría y Visualización de Datos de Transparencia Pública (2003–2025).
+
+**Demo / Enlace al Video**: Un link o embed directo a tu video de YouTube/Vimeo o al reporte publicado en Power BI Service.
+
+**Resumen Ejecutivo / Descripción:** Proyecto de Auditoría de Datos y Business Intelligence: Registro de Transparencia Pública (2003–2025)
+
+Análisis integral y auditoría de calidad sobre un conjunto de más de 260,000 registros históricos de solicitudes de información pública. El objetivo principal del proyecto consistió en evaluar la integridad de los datos, medir los tiempos reales de respuesta institucional y diseñar propuestas de arquitectura de software para optimizar la gobernanza del sistema.
+
+Puntos clave del proyecto:
+
+ETL & Data Wrangling: Depuración y estandarización de más de 500 variantes de nombres de dependencias públicas mediante Power Query.
+
+Modelado DAX: Creación de métricas para auditar plazos límite y detectar discrepancias entre el cumplimiento oficial y el cumplimiento real.
+
+Data Storytelling & BI: Diseño de tableros interactivos e intuitivos en Power BI para el análisis de tendencias, volumen por materia y comportamiento por dependencia (IFAI/INAI, PJF, PEMEX).
+
+Gobernanza de Datos: Formulación de propuestas técnicas orientadas a la estandarización de captura desde el origen y la automatización de plazos por sistema.
+
+**Stack Tecnológico**: Power BI, Power Query (ETL / Data Wrangling), DAX, Modelado Relacional.
+
+**Principales Hallazgos (Insights):**
+
+Normalización de más de 500 nombres de dependencias.
+
+Identificación del % de cumplimiento REAL vs. Oficial 
+
+Detección y análisis de 6,531 solicitudes atípicas.
+
+Propuestas de Solución Técnica:  3 tarjetas finales (Estandarización en Origen, Blindaje por Sistema y Transparencia Proactiva).
+
+**Autoría y Contacto**: Patricia E. Torres G. / Ingeniera en Software Administradora de Empresas & Data Analyst.
+https://www.linkedin.com/in/patricia-e-torres
+Correo electrónico otropattytoz@gmail.com
